@@ -6,7 +6,7 @@ GPIO.setmode(GPIO.BCM)
 
 # init list with pin numbers
 
-pinList = [2, 3, 4, 17]
+pinList = [17, 27, 22, 23 ]
 
 # loop through pins and set mode and state to 'high'
 
@@ -21,48 +21,48 @@ SleepTimeL = 0.2
 # main loop
 
 try:
-  GPIO.output(2, GPIO.LOW)
+  GPIO.output(17, GPIO.LOW)
   time.sleep(SleepTimeL); 
   
-  GPIO.output(3, GPIO.LOW)
+  GPIO.output(27, GPIO.LOW)
   time.sleep(SleepTimeL);  
 
-  GPIO.output(4, GPIO.LOW)
+  GPIO.output(22, GPIO.LOW)
   time.sleep(SleepTimeL);
 
-  GPIO.output(17, GPIO.LOW)
+  GPIO.output(23, GPIO.LOW)
   time.sleep(SleepTimeL);
   
-  GPIO.output(3, GPIO.HIGH)
-  GPIO.output(4, GPIO.HIGH)
+  GPIO.output(27, GPIO.HIGH)
+  GPIO.output(22, GPIO.HIGH)
   time.sleep(SleepTimeL);
   
-  GPIO.output(2, GPIO.HIGH)
   GPIO.output(17, GPIO.HIGH)
-  GPIO.output(3, GPIO.LOW)
-  GPIO.output(4, GPIO.LOW)
+  GPIO.output(23, GPIO.HIGH)
+  GPIO.output(27, GPIO.LOW)
+  GPIO.output(22, GPIO.LOW)
   time.sleep(SleepTimeL);
   
-  GPIO.output(2, GPIO.LOW)
   GPIO.output(17, GPIO.LOW)
-  GPIO.output(3, GPIO.HIGH)
-  GPIO.output(4, GPIO.HIGH)
+  GPIO.output(23, GPIO.LOW)
+  GPIO.output(27, GPIO.HIGH)
+  GPIO.output(22, GPIO.HIGH)
   time.sleep(SleepTimeL);
   
-  GPIO.output(3, GPIO.LOW)
-  GPIO.output(4, GPIO.LOW)
-  time.sleep(SleepTimeL);
-
-  GPIO.output(2, GPIO.HIGH)
-  time.sleep(SleepTimeL); 
-  
-  GPIO.output(3, GPIO.HIGH)
-  time.sleep(SleepTimeL);  
-
-  GPIO.output(4, GPIO.HIGH)
+  GPIO.output(27, GPIO.LOW)
+  GPIO.output(22, GPIO.LOW)
   time.sleep(SleepTimeL);
 
   GPIO.output(17, GPIO.HIGH)
+  time.sleep(SleepTimeL); 
+  
+  GPIO.output(27, GPIO.HIGH)
+  time.sleep(SleepTimeL);  
+
+  GPIO.output(22, GPIO.HIGH)
+  time.sleep(SleepTimeL);
+
+  GPIO.output(23, GPIO.HIGH)
   time.sleep(SleepTimeL);
 
   GPIO.cleanup()
