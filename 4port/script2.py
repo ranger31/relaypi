@@ -16,7 +16,7 @@ for i in pinList:
 
 # time to sleep between operations in the main loop
 
-SleepTimeS = 0.1
+SleepTimeS = 0.5
 
 # main loop
 
